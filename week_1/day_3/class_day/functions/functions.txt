@@ -1,0 +1,8 @@
+# Why use functions
+
+Organisation 
+Reusability
+Modularity
+
+You don't want you to repeat yourself.
+functions allow to reuse without copy paste

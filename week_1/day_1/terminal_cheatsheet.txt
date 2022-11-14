@@ -1,0 +1,23 @@
+cd change directory
+cd .. move up one directory
+cd ../../ to move up multiple layers
+pwd print working directory
+ls list items
+ls -a list everything
+ls -l list item details
+rm delete
+rm - fr delete directory and everything in directory recursively
+code . open vs code and all files in directory
+mkdir make directory
+touch  make file
+tab to autocomplete paths
+mv is move? or rename
+never do rm -fr forse everything to rm 
+history shows last 1400 commands
+cp copy
+cp -r copy a folder
+clear cleanse terminal
+cmd + k clear screen
+up arrow shows previous commands
+
+
