@@ -2,7 +2,7 @@ import unittest
 from src.pub import Pub 
 from src.drinks import Drinks
 from src.customer import Customer
-
+from src.food import Food
 
 class TestPub(unittest.TestCase):
     
@@ -10,6 +10,7 @@ class TestPub(unittest.TestCase):
         self.pub = Pub("The Prancing Pony", 100.00)
         self.drink = Drinks("Sprite", 3.5)
         self.customer = Customer("Michael Scot", 50, 20)
+        self.food = Food("Pasta", 7, 1)
 
 
     def test_pub_has_name(self):
@@ -84,3 +85,14 @@ class TestPub(unittest.TestCase):
     #     self.customer.drunk = 6
     #     result = self.pub.check_drunkenness(self.customer, self.drink)
     #     self.assertFalse(result)
+
+
+    def test_food_name(self):
+        self.assertEqual("Pasta", self.food.name)
+
+    def test_buy_food(self):
+        self.customer.drunk = 6
+        self.pub.buy_food(self.customer, self.food)
+        self.assertEqual(43, self.customer.wallet)
+        self.assertEqual(107, self.pub.till)
+        self.assertAlmostEqual(5, self.customer.drunk)

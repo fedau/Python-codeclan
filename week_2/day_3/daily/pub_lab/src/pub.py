@@ -27,6 +27,13 @@ class Pub:
         else: 
             return "you are to drunk"
 
+    def buy_food(self, customer, food):
+        customer.wallet -= food.price
+        bill = food.price
+        self.increase_till(bill)
+        customer.drunk -= food.rejuvenation
+
+ 
 
   
 
