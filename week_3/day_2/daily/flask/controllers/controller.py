@@ -2,7 +2,7 @@ from app import app
 
 @app.route('/')
 def index():
-    return 'Hello world!'
+    return 'Hello ljksdlk!'
 
 
 @app.route('/<name>')
