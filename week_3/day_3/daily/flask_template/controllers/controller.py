@@ -9,3 +9,8 @@ def index():
 @app.route('/tasks')
 def show_tasks():
     return render_template('index.html', title='Home', tasks=tasks) 
+
+@app.route('/tasks/<int:task_id>')
+def show_task(task_id):
+    task = tasks[task_id]
+    return render_template('task.html', task=task)
