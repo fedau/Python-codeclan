@@ -1,0 +1,39 @@
+body{
+    background-color: bisque;
+    text-align: center;
+}
+header {
+    color: cadetblue;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+h2, h3, h4, h5, h6{
+    color: cadetblue;
+}
+ul li {
+    list-style: none;
+
+    } 
+nav ul li {
+    margin: 1;
+    padding: 1;
+    float: left;
+    overflow: hidden;
+
+    }
+/* nav ul{
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
+
+li a {
+        display: block;
+        padding: 8px;
+        
+      }
+
+/* li a:hover {
+        color: #111;
+      } */

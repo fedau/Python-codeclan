@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Find out what is on </title>
+</head>
+<body>
+    <header>
+        <h1>What is on</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+
+                </li>
+                <li>
+                    <a href="/events">Events</a>
+                </li>
+                <li>
+                    <a href="/events/new">New Event</a>
+                </li>
+            </ul>
+        </nav> 
+    </header>
+    <main>
+        {% block content %}
+            
+        {% endblock %}
+    </main>
+    <footer>
+        <hr>
+        <section>
+            <h3>our site</h3>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/events">Events</a>
+                    </li>
+                    <li>
+                        <a href="/events/new">New Event</a>
+                    </li>
+                </ul>
+            </nav> 
+            <h6>made by Fedau during class</h6>
+        </section>
+    </footer>
+</body>
+</html>
