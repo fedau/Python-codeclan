@@ -1,0 +1,27 @@
+body{
+    background-color: bisque;
+    text-align: center;
+}
+ nav ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    overflow: hidden;
+
+    }
+/* nav ul{
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
+
+li a {
+        display: block;
+        padding: 8px;
+        
+      }
+
+li a:hover {
+        color: #111;
+      }
