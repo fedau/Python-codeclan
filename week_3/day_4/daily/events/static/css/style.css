@@ -3,9 +3,12 @@ body{
     text-align: center;
 }
 header {
-    color: cadetblue;
+    /* color: cadetblue;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
 
 }
 h2, h3, h4, h5, h6{
@@ -36,4 +39,69 @@ li a {
 
 /* li a:hover {
         color: #111;
+      } */
+
+
+
+      .event-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      
+      .event { 
+         display: flex;
+         flex-wrap: wrap;
+        flex-direction: column; 
+        flex-basis: 50% ;
+        width: 20vw;
+        background-color: wheat;
+        padding: 5px;
+        margin:10px;  
+        flex-basis: 33%;
+      
+      
+      
+      }
+  
+      .event p, i{
+        color:black;
+        list-style: none;
+        
+      }
+
+      @media max-width(1080px) {
+        .event {
+            flex-basis: 25%;
+            background-color: red;
+        }
+    }
+    
+    @media max-width(640px) {
+        .event {
+            flex-basis: 50%;
+            background-color: green;
+        }
+    }
+
+
+      /* .event-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      
+      .event {
+        display: flex;
+        flex-direction: column;
+        width: 20vw;
+        background-color: #617073;
+        padding: 10px;
+        margin:20px;
+      }
+      
+      .event p, i{
+        color: white;
+        list-style: none;
+        margin:3px;
       } */

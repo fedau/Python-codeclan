@@ -3,21 +3,27 @@
 
 {% block content %}
     <h2>Our Events</h2>
-    <ul>
+    <div class="event-container"> 
+    <!-- <ul> -->
        {% for event in event_list %}
-            <li>
-                <h3>Name</h3>
+        
+       <!-- <li> -->
+        <div class="event">
+                <h4>Name</h4>
                 <p>{{ event.event_name }}</p>
                 <a href="/events/{{ loop.index0 }}">view event</a>
-                <h3>Date</h3>
+                <h4>Date</h4>
                 <p>{{ event.event_date }}</p>
-                <h3> Guests</h3>
+                <h4> Guests</h4>
                 <p> {{ event.guests }}</p>
-                <h3> Location</h3>
+                <h4> Location</h4>
                 <p> {{ event.room_location }}</p>
-                <h3> Description</h3>
+                <h4> Description</h4>
                 <p> {{ event.description }}</p>
-            </li>
+            </div>
+            <!-- </li> -->
+        
        {% endfor %}
-    </ul>
+    <!-- </ul> -->
+</div>  
 {% endblock %}
