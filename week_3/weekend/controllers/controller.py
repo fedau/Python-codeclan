@@ -12,3 +12,7 @@ def all_books():
 def book(book_index):
     single_book = get_book(book_index)
     return render_template('book.html', book=single_book)
+
+@app.route('/books/new')
+def new_book():
+    return render_template('/new-book.html')
