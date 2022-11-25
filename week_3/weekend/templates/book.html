@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block header_content %}
+<h2>This is the page with a single book</h2>
+    
+{% endblock %}
+
+{% block page_content %}
+<h2>Find out more about {{ book.title }}</h2>
+<div class="book-card">
+    <h4>Title</h4>
+    <p>{{ book.title }}</p>
+    <h4>Author</h4>
+    <p>{{ book.auhtor }}</p>
+    <h5>Genre</h5>
+    <p>{{ book.genre }}</p>
+    <h4>Book available</h4>
+    <p> {% if book.checked_out %}
+            No
+        {% else %}
+            Yes
+        {% endif%}
+    </p>
+</div>
+    
+{% endblock %}
