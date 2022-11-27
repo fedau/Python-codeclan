@@ -1,5 +1,89 @@
 body{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    background-color: blanchedalmond;
+    background-color: #edeee9;
+    color: #873e23;
+}
+.book-card h1, h2, h3, h4, h5, h6, p{
+    margin: 0 ;
+    padding: 5px;
+}
+nav a {
+  
+    font: bold 11px Arial;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+ 
+}
+nav a:hover {
+    text-decoration: none;
+    color:#873e23
+
+}
+
+.books-page-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.book-card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-basis: 50% ;
+    width: 20vw;
+    background-color: #76b5c5;
+    padding: 5px;
+    margin:10px;  
+    flex-basis: 33%;
+    border-radius: 25px;
+
+}
+.new-book-parent{
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+
+}
+
+.new_book{
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+    /* flex-basis: 50% ; */
+    width: 30vw;
+    background-color: #76b5c5;
+    padding: 10px;
+    margin:10px;  
+    border-radius: 25px;
+ 
+
+}
+
+.delete{
+    font: bold 11px Arial;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    margin: 8px;
+
+}
+
+.delete:hover {
+    text-decoration: none;
+    color:#873e23
 }

@@ -12,7 +12,7 @@
             <h4>Title</h4>
             <p>{{ book.title }}</p>
             <h4>Author</h4>
-            <p>{{ book.auhtor }}</p>
+            <p>{{ book.author }}</p>
             <h5>Genre</h5>
             <p>{{ book.genre }}</p>
             <h4>Book available</h4>
@@ -23,8 +23,15 @@
                 {% endif%}
             </p>
             <a href="/books/{{ loop.index0 }}">view this book</a>
-            {% endfor%}
+
+            <form class="form-inline" action="/books/delete/{{ book.title }}" method="POST">
+                <input type="submit" value="Delete" class="delete">
+              </form>
         </div>
+            {% endfor%}
+        
+          
+        
     </div>
 
 {% endblock %}

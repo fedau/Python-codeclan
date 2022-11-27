@@ -6,6 +6,19 @@
 {% endblock %}
 
 {% block page_content %}
+<div class="new-book-parent">
     <h4>Please fill out the details below if you would like to donate a book</h4>
-    
+    <form action="/books" method="POST" class="new_book">
+        <label for="title">Book Title</label>
+        <input type="text" name="title" id="title">
+        <label for="author">Author</label>
+        <input type="text" name="author" id="author">
+        <label for="genre">Book Genre</label>
+        <input type="text" name="genre" id="genre">
+        <label for="checked_out">Is the book checked out?</label>
+        <input type="checkbox" name="checked_out" id="checked_out">
+        <input type="submit" value="Add book to library">
+
+    </form>
+</div>
 {% endblock %}
