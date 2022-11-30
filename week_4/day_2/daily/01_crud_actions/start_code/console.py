@@ -14,6 +14,10 @@ user_repository.save(user2)
 
 task = Task("Walk dog", user1, 60)
 task_repository.save(task)
+
+
+found_tasks = user_repository.tasks(user1)
+
 # task_1= Task('Go for run', 'Jack Jarvis', 20)
 # task_repository.save(task_1)
 

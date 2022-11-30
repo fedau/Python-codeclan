@@ -1,5 +1,5 @@
 from db.run_sql import run_sql
-import user_repository as user_repository
+import repositories.user_repository as user_repository
 from models.task import Task
   
 def select_all():  
