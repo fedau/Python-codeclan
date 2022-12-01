@@ -8,6 +8,7 @@ task_blueprint = Blueprint("tasks", __name__)
 @task_blueprint.route('/tasks')
 def tasks():
     all_tasks_list = task_repository.select_all()
+    
     return render_template('tasks/index.html', all_tasks_key = all_tasks_list)
 
 # NEW
